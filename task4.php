@@ -11,16 +11,17 @@ $student = [
 
     "student1" => ["math" => 85, "english" => 90, "science" => 95],
     "student2" => ["math" => 22, "english" => 9, "science" => 2],
-    "student3" => ["math" => 85, "english" => 90, "science" => 95],
+    "student3" => ["math" => 33, "english" => 33, "science" => 33],
 ];
 
 function average( $student ) {
     foreach ( $student as $studentIndex => $grades ) {
 
         $total   = array_sum( $grades );
+      
         $count   = count( $grades );
         $average = number_format(  ( $total / $count ), 2 );
-        if ( $average >= 80 || $average <= 100 ) {
+        if ( $average >= 80 ) {
             echo "$studentIndex " . " - Grade: A+" . PHP_EOL;
         } elseif ( $average >= 70 ) {
             echo "$studentIndex " . " - Grade: A" . PHP_EOL;

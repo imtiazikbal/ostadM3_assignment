@@ -19,3 +19,16 @@ function removeEvenNumber($n){
  $result = removeEvenNumber($numbers);
  print_r($result);
 
+/// vai arek babe korsi akto dekben please 
+// <?php 
+
+// $numbers = [1,2,3,4,5,6,7,8,9,10];
+// function oddNumber($n){
+//     if($n % 2 != 0){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+//  $result = array_filter($numbers, 'oddNumber');
+//  print_r($result);

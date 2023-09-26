@@ -12,8 +12,6 @@
 
 
 $text = "The quick brown fox jumps over the lazy dog";
-
-
 function takesArgument($text){
    $text = strtolower($text);
    $text = str_replace("brown", "red",$text);
