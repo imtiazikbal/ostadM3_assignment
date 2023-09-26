@@ -1,28 +1,25 @@
 <?php 
 
-//Task 1: String Manipulation
+// Task 1: String Manipulation
+
+
+// Create a string variable called $text with the value "The quick brown fox jumps over the lazy dog.". Write a PHP function which takes "$text" as an argument to:
+
+
+// Convert the string to all lowercase.
+// Replace "brown" with "red" in the string.
+// Print the modified text.
+
 
 $text = "The quick brown fox jumps over the lazy dog";
 
 
 function takesArgument($text){
-    echo $text;
+   $text = strtolower($text);
+   $text = str_replace("brown", "red",$text);
+   return $text;
+    
 }
-takesArgument($text);
 
-echo PHP_EOL;
-
-//Convert the string to all lowercase.
-$text1 = "The quick brown fox jumps over the lazy dog";
-$lowerCase = strtolower($text1);
-echo $lowerCase;
-echo PHP_EOL;
-
-
-
-//Replace the word "brown" with "red".
-$text2 = "The quick brown fox jumps over the lazy dog";
-$replace = str_replace("brown", "red", $text2);
-echo $replace;
-
+echo takesArgument($text);
 ?>
